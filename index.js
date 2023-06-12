@@ -5,6 +5,8 @@ var userInput = [];
 let nextLevel
 var startGame = false;
 
+const mediaQuery = window.matchMedia('(max-width: 900px)')
+
 
 $("body").keypress(function (e) {
   $("h1").text("Level " + levelCounter);
@@ -12,6 +14,14 @@ $("body").keypress(function (e) {
   sequenceGenerator()
   input()
 });
+
+if(mediaQuery.matches)
+{
+  $("h1").text("Level " + levelCounter);
+  startGame = true;
+  sequenceGenerator()
+  input()
+}
 
 
 
