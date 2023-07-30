@@ -1,3 +1,3 @@
 # SimonGame
 
-https://legitsquad.github.io/SimonGame/
+https://parthsingh.github.io/SimonGame/
